@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    position: relative;
+    padding: 80px 0;
+    /* background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%); */
+    background-color: #000;
+    border-radius: 0 0 100px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Video */
+.header__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 0 100px;
+    opacity: 0.5;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.header__text {
+    font-weight: 300;
+    font-size: 26px;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.header__btns {
+    display: flex;
+    column-gap: 20px;
+}
+
+.header__btn {
+    background-color: #000;
+    border-radius: 8px;
+    line-height: 100%;
+    transition: all 0.5s ease-in;
+}
+
+.header__btn:hover {
+    background-color: #1782CF;
+}
+
+.header__btn_outline {
+    max-width: 128px;
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 8px;
+    transition: all 0.5s ease-in;
+}
+
+.header__btn_outline:hover {
+    border-color: #1782CF;
+}
+
+.btn {
+    height: 48px;
+    padding: 15.43px 24px 18.86px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.header__img {
+    border-radius: 80px;
+}
+
+/* Portfolio */
+
+.porfolio {
+    padding: 80px 0;
+}
+
+.portfolio__title {
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 65px 0;
+}
+
+.portfolio__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+}
+
+.portfolio__item {
+    text-align: center;
+}
+
+.portfolio__img {
+    margin: 0 0 30px 0;
+    border-radius: 30px;
+    transition: opacity 0.2s ease-in;
+}
+
+.portfolio__img:hover {
+    opacity: 0.8;
+}
+
+.portfolio__text a {
+    font-size: 22px;
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Contacts */
+
+.contacts {
+    padding: 80px 0;
+    border-radius: 100px 0px 0px 0px;
+    background: rgb(37, 37, 37);
+    color: #fff;
+}
+
+.contacts__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 52px;
+    margin: 0 0 65px 0;
+}
+
+.contacts__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+
+.contacts__item {
+    flex: 1 1 auto;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding: 46px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 1px solid #363636;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+.contacts__item:hover {
+    cursor: pointer;
+    border-color: #1782CF;
+    background: #1e1e1e;
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    background: #1e1e1e;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: #5d5d5d;
+    margin: 0 0 15px 0;
+}
+
+.footer__link a {
+    font-size: 14px;
+    color: #5886a8;
+}
+
+/* InnerPage */
+/* Header */
+
+.innerPage {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.innerPage__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.innerPage__title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #000;
+}
+
+.innerPage__blockText {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.innerPage__text {
+    line-height: 1.5;
+    color: #555;
+}
+
+.innerPage__link {
+    margin: 0 0 40px;
+}
+
+.innerPage__link a {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+/* Main */
+
+.innerPageMain {
+    margin: 0 0 40px;
+}
+
+/* Footer */
+
+.innerPageFooter__backArrow {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    max-width: 770px;
+    background: #f1f1f1;
+    padding: 30px;
+    margin: 0 auto;
+    color: #000;
+    transition: all 0.2s ease-in;
+    border-radius: 10px;
+}
+
+.innerPageFooter__backArrow:hover {
+    background-color: #dedede;
+}
+
+/* Travel */
+
+.travel {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.travel__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+}
+
+.travel__title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #000;
+}
+
+.travel__blockText {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    text-align: center;
+}
+
+.travel__text {
+    line-height: 150%;
+    color: #555;
+}
+
+.travel__link {
+    color: #000;
+    margin: 0 0 40px 0;
+}
+
+.travel__link a {
+    text-decoration: underline;
+}
+
+.travel__img {
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.travel__backArrow {
+    background-color: #F1F1F1;
+    max-width: 770px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 30px;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+
+.travel__backArrow:hover {
+    background-color: #dedede;
+}
+
+/* LoftHouse */
+/* Header */
+.loftHouse {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.loftHouse__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 0 0 40px 0;
+}
+
+.loftHouse__title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #000;
+}
+
+.loftHouse__block {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.loftHouse__text {
+    line-height: 150%;
+    color: #555;
+}
+
+.loftHouse__link a {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* IMG */
+
+.loftHouse__img {
+    display: block;
+    margin: 0 auto 40px;
+}
+
+/* FOOTER */
+
+.loftHouse__backArrow {
+    max-width: 770px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #f1f1f1;
+    padding: 30px;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+
+.loftHouse__backArrow:hover {
+    background-color: #dedede;
+}
